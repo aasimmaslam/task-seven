@@ -191,27 +191,16 @@ const WorkProcess = () => {
   ];
 
   return (
-    // <div className="bg-[#0B0C10] text-white py-16 px-6 flex flex-col items-center relative">
-    //   {/* Heading */}
-    //   <div className="max-w-3xl text-center mb-12 ">
-    //     <div className="flex items-center justify-center gap-3 mb-3   ">
-    //       <img src={GetStartedLine} alt="line" className="w-[12px] h-[62px] object-contain  -ml-200" />
-    //       <h1 className="text-[43px] font-gilroy-bold leading-[120%] -ml-80">Our Work Process</h1>
-    //     </div>
-    //     <p className="text-gray-400 text-sm leading-relaxed">
-    //       At Devzz Tech, our streamlined work process ensures efficiency, quality, and innovation at every stage of your project. Here’s how we make it happen:
-    //     </p>
-    //   </div>
     <div className="bg-[#0B0C10] text-white py-16 px-6 flex flex-col items-center relative">
       {/* Section Heading */}
       <div className="max-w-3xl text-center mb-12 -ml-100">
-        <div className="flex items-center justify-center gap-3 mb-3 -ml-10">
+        <div className="flex items-center justify-center gap-3 mb-3 -ml-13">
           <img
             src={GetStartedLine}
             alt="line"
-            className="w-[12px] h-[62px] object-contain -ml-88"
+            className="w-[12px] h-[62px] object-contain -ml-87"
           />
-          <h1 className="text-[43px] font-normal font-gilroy-bold leading-[120%] ">
+          <h1 className="text-[43px] font-normal font-gilroy-bold leading-[120%]  ml-10">
             Our Work Process
           </h1>
         </div>
