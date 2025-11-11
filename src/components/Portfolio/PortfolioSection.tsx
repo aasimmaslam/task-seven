@@ -65,11 +65,11 @@ const PortfolioSection = () => {
       <div className="w-full max-w-6xl flex flex-col gap-10">
         {/* ===== Header Section ===== */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4 mb-10">
             <img
               src={GetStartedLine}
               alt="line"
-              className="w-[12px] h-[62px] object-contain"
+              className="w-[12px] h-[62px] object-contain -ml-3"
             />
             <h2 className="text-[43px] font-gilroy-bold font-normal leading-[120%]">
               Our Portfolio

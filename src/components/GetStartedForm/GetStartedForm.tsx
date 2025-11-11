@@ -345,18 +345,19 @@ const GetStartedForm: React.FC = () => {
         
         {/* Left side: Heading + Form */}
         <div className="w-full md:w-1/2">
-          {/* Heading */}
-          <h2 className="flex items-center gap-2 mb-6 ">
-           
-            <span className="font-gilroy-black font-normal text-[48px] leading-[120%] text-white  ml-10">
-                 Get Started Today
-            </span>
-            <img
-          src={GetStartedLine}
-          alt="Heading icon"
-          className="w-[px12] h-[62px] object-contain -ml-108" // adjust size as needed
-        />
-          </h2>
+  {/* Heading */}
+  <h2 className="flex items-center gap-4 mb-6 mb-10">
+    <img
+      src={GetStartedLine}
+      alt="Heading icon"
+      className="w-[12px] h-[62px] object-contain -ml-3"
+    />
+    <span className="font-gilroy-black text-[48px] leading-[120%] text-white font-normal">
+      Get Started Today
+    </span>
+  </h2>
+
+
 
           {/* Form */}
           <form className="flex flex-col gap-5">
