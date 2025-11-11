@@ -58,25 +58,25 @@ const WhyUs: React.FC = () => {
 
                         {/* Feature Cards */}
                         <div className="w-[399px] border border-[#747474] rounded-[10px] py-[19px] px-[9px] absolute top-[88px] -left-[232px] -translate-y-1/2 flex gap-3 items-start">
-                            <img src="/why-tick.svg" alt="why choose us" className="w-5" />
+                            <img src="/why-choose-us.gif" alt="why choose us" className="w-5" />
                             <p className="text-[16px] text-[#E9EFF8] leading-[150%] font-medium">
                                 {features}
                             </p>
                         </div>
                         <div className="w-[399px] border border-[#747474] rounded-[10px] py-[19px] px-[9px] absolute top-8 -right-[222px] -translate-y-1/2 flex gap-3 items-start">
-                            <img src="/why-tick.svg" alt="why choose us" className="w-5" />
+                            <img src="/why-choose-us.gif" alt="why choose us" className="w-5" />
                             <p className="text-[16px] text-[#E9EFF8] leading-[150%] font-medium">
                                 {features}
                             </p>
                         </div>
                         <div className="w-[399px] border border-[#747474] rounded-[10px] py-[19px] px-[9px] absolute -bottom-2.5 -left-[315px] -translate-y-1/2 flex gap-3 items-start">
-                            <img src="/why-tick.svg" alt="why choose us" className="w-5" />
+                            <img src="/why-choose-us.gif" alt="why choose us" className="w-5" />
                             <p className="text-[16px] text-[#E9EFF8] leading-[150%] font-medium">
                                 {features}
                             </p>
                         </div>
                         <div className="w-[399px] border border-[#747474] rounded-[10px] py-[19px] px-[9px] absolute bottom-[70px] -right-[290px] -translate-y-1/2 flex gap-3 items-start">
-                            <img src="/why-tick.svg" alt="why choose us" className="w-5" />
+                            <img src="/why-choose-us.gif" alt="why choose us" className="w-5" />
                             <p className="text-[16px] text-[#E9EFF8] leading-[150%] font-medium">
                                 {features}
                             </p>
