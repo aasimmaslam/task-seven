@@ -43,9 +43,6 @@ const LandingPage = () => {
           <GetStartedForm />
         </div>
 
-
-
-
         <div>
           <Footer />
         </div>
