@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Picture5 from "../../images/Picture5.png";
 import Picture6 from "../../images/Picture6.png";
