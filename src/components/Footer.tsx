@@ -5,10 +5,10 @@ const Footer = () => {
         <>
             <div className="bg-black ">
 
-                <div className="flex items-center py-24 justify-between px-10 max-w-[1440px] mx-auto">
+                <div className="flex items-center py-24 justify-between px-10 max-w-[1440px] mx-auto lg:flex-row flex-col">
 
                     <div className="space-y-9">
-                        <div>
+                        <div className="lg:block flex justify-center">
                             <img src="/logo-two.svg" alt="" />
                         </div>
                         <p className="text-sm text-gray-300 leading-relaxed max-w-xs">
@@ -16,9 +16,9 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div className="bg-linear-to-b from-[#E9EFF8] to-[#123A6E] w-px h-54"></div>
+                    <div className="bg-linear-to-b from-[#E9EFF8] to-[#123A6E] w-px h-54 lg:block hidden"></div>
 
-                    <div>
+                    <div className="lg:block hidden">
                         <ul className="font-light text-lg flex flex-col items-start gap-6 text-gray-300">
 
                             <li className="cursor-pointer">About</li>
@@ -28,7 +28,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="bg-linear-to-b from-[#E9EFF8] to-[#123A6E] w-px h-54"></div>
+                    <div className="lg:bg-linear-to-b bg-linear-to-r from-[#E9EFF8] to-[#123A6E] lg:w-px w-84 lg:h-54 h-0.5 m-5"></div>
 
                     <div className="flex flex-col items-start gap-10 text-gray-300 text-sm">
                         <div className="space-y-7">

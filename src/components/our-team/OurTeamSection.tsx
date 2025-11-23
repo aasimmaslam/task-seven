@@ -149,7 +149,7 @@ const OurTeamSection = () => {
         ]
     ];
 
-    // Auto-rotate every 3 seconds
+    // Auto-rotate every 2 seconds
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % 10);
@@ -178,19 +178,19 @@ const OurTeamSection = () => {
                     <div className="w-full max-w-[1440px] flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
                         {/* Left Side - Active Member Info */}
-                        <div className="w-full lg:w-[35%] text-white space-y-4">
+                        <div className="w-full lg:w-[35%] text-white space-y-4 lg:order-1 order-2">
 
 
                             <div className="space-y-2 transition-all duration-500">
-                                <h1 className="text-4xl md:text-5xl font-bold leading-tight text-right">{activeMember.name}</h1>
-                                <p className="text-gray-400 text-base md:text-lg uppercase tracking-wider  text-right">{activeMember.role}</p>
+                                <h1 className="text-4xl md:text-5xl font-bold leading-tight text-center lg:text-right">{activeMember.name}</h1>
+                                <p className="text-gray-400 text-base md:text-lg uppercase tracking-wider text-center lg:text-right">{activeMember.role}</p>
                             </div>
 
 
                         </div>
 
                         {/* Right Side - Profiles Carousel */}
-                        <div className="w-full lg:w-[65%] relative" style={{ height: '500px', maxHeight: '80vh' }}>
+                        <div className="w-full lg:w-[65%] relative order-1 lg:order-2" style={{ height: '500px', maxHeight: '80vh' }}>
                             {teamMembers.map((member, index) => {
                                 const pos = currentPositions[index];
                                 const isActive = index === activeIndex;
@@ -198,17 +198,22 @@ const OurTeamSection = () => {
                                 return (
                                     <div
                                         key={member.id}
-                                        className="absolute rounded-full overflow-hidden shadow-2xl cursor-pointer transition-all duration-1000 ease-in-out"
+                                        className="absolute rounded-full overflow-hidden shadow-2xl cursor-pointer transition-all duration-1000 ease-in-out "
                                         style={{
                                             left: `${pos.x}%`,
                                             top: `${pos.y}%`,
-                                            transform: `translate(-50%, -50%) scale(${pos.scale})`,
+                                            transform: `translate(-50%, -50%) scale(${typeof window !== 'undefined' && window.innerWidth < 768
+                                                    ? pos.scale * 0.7   // mobile
+                                                    : window.innerWidth < 1024
+                                                        ? pos.scale * 0.9   // tablet
+                                                        : pos.scale         // desktop
+                                                })`,
                                             width: '320px',
                                             height: '320px',
                                             zIndex: pos.zIndex,
                                             opacity: isActive ? 1 : 0.85
                                         }}
-                                    onClick={() => setActiveIndex(index)}
+                                        onClick={() => setActiveIndex(index)}
                                     >
                                         <img
                                             src={member.img}
