@@ -4,6 +4,8 @@ import OurTeamSection from "../components/our-team/OurTeamSection"
 import { useEffect } from "react";
 import VisionMission from "../components/VisionMission";
 import CEOMessage from "../components/CEOMessage";
+import CoreValues from "../components/CoreValues";
+import DevzzHero from "../components/DevzzHero";
 
 
 const AboutUsPage = () => {
@@ -13,6 +15,12 @@ const AboutUsPage = () => {
   return (
     <>
       <div>
+        <div className="w-full min-h-screen">
+          <DevzzHero />
+        </div>
+        <div>
+          <CoreValues />
+        </div>
         <div className="bg-[#1E1C26]">
           <VisionMission />
           <CEOMessage />
